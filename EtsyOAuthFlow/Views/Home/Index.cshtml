@@ -1,0 +1,15 @@
+﻿@using System.Web.Mvc.Html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Etsy</title>
+</head>
+    <body>
+        @using (Html.BeginForm("Auth","Home", FormMethod.Post))
+        {
+            <input type="text" name="scope" />
+            <input type="submit" value="Start Auth" />
+        }
+    </body>
+</html>
